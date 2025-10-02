@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.chat-container {
+  height: 500px;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.message {
+  margin: 15px 0;
+  padding: 15px 20px;
+  border-radius: 15px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.bot-message {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  margin-right: auto;
+}
+
+.user-message {
+  background: #f0f2f5;
+  color: #333;
+  margin-left: auto;
+}
+
+.timer {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ff6b6b;
+  margin-bottom: 10px;
+}
+
+.upload-area {
+  border: 2px dashed #667eea;
+  border-radius: 15px;
+  padding: 40px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.upload-area:hover {
+  background: rgba(102, 126, 234, 0.1);
+}
+
+.score-badge {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.score-high { background: #d4edda; color: #155724; }
+.score-medium { background: #fff3cd; color: #856404; }
+.score-low { background: #f8d7da; color: #721c24; }
